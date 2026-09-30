@@ -73,6 +73,7 @@ services:
 
     volumes:
       - ./citas-web:/workspace
+      - web_node_modules:/workspace/node_modules
       - node_cache:/root/.npm
 
     ports:
@@ -92,3 +93,4 @@ volumes:
   mysql_data:
   maven_cache:
   node_cache:
+  web_node_modules:
